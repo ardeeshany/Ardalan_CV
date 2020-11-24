@@ -1,0 +1,299 @@
+---
+title: "Ardalan Mirshani's CV"
+author: Ardalan Mirshani
+date: "`r Sys.Date()`"
+params:
+  pdf_mode:
+    value: true
+output:
+  pagedown::html_resume:
+    css: ['dd_cv.css', 'resume']
+    self_contained: true
+---
+
+```{r, include=FALSE}
+# knitr::opts_chunk$set(
+#   results='asis', 
+#   echo = FALSE
+# )
+# 
+# library(magrittr) # For the pipe
+# library(fontawesome)
+# source("cv_printing_functions.r")
+# 
+# # Read in all data and initialize a CV printer object
+# CV <- create_CV_object(
+#   data_location = "https://docs.google.com/spreadsheets/d/1m14pQsl6kJ4ZcCpgkPPfnhNRjWgQpi3kWjtZ03-mBxc/edit#gid=917338460",  
+#   pdf_mode = params$pdf_mode
+# )
+
+```
+
+```{r, include=FALSE}
+## When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
+# if(params$pdf_mode) {
+#     cat("
+# <style>
+# :root{
+#   --decorator-outer-offset-left: -6.5px;
+# }
+# </style>")
+# }
+```
+
+# Aside
+
+```{r, include=FALSE}
+# Build interactive network of positions colored by section
+# and connected if they occurred in the same year
+#atadrivencv::build_network_logo(CV$entries_data)
+```
+
+```{r, include=FALSE}
+# if(params$pdf_mode){
+#   cat("View this CV online with links at _nickstrayer.me/cv/_")
+# } else {
+#   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/nstrayer/cv/raw/master/strayer_cv.pdf)")
+# }
+```
+
+## Contact Info {#contact}
+
+-   <i class='fa fa-envelope'></i> [ardeeshany\@gmail.com](mailto:ardeeshany@gmail.com)
+-   <i class='fa fa-home'></i> [mirshani.com](https://mirshani.com)
+-   <i class='fa fa-twitter'></i> [ArdalanMirshani](https://twitter.com/ArdalanMirshani)
+-   <i class='fa fa-github'></i> [ardeeshany](https://www.github.com/ardeeshany)
+-   <i class='fa fa-linkedin'></i> [mirshani](https://www.linkedin.com/in/mirshani)
+
+## <i class="fab fa-r-project fa-lg"></i> Programming {#skills}
+
+- <i class="fa fa-laptop fa-lg"></i> 
+<span style="font-weight:bold"> Web development:</span> <br>
+Expert in {Shiny} + HTML/CSS/JS, {blogdown}
+
+- <i class="fa fa-robot fa-lg"></i> 
+<span style="font-weight:bold"> Automation Environment:</span> 
+R-pkg dev, Workflow pkgs {usethis, golem, targets}, {renv}, {testthat}, {profvis}, chatty functions
+
+- <i class="fa fa-book fa-lg"></i> 
+<span style="font-weight:bold"> Reproducible Reporting:</span> {rmarkdown}, {bookdown}, {pagedown},  Latex
+
+- <i class="fa fa-chart-bar fa-lg"></i> 
+<span style="font-weight:bold"> Interactive Visualizations:</span> 
+ggplot2, htmlwidgets pkgs {DT, Plotly, Leaflet, etc.}, {gt}
+
+- <i class="fa fa-search fa-lg"></i> 
+<span style="font-weight:bold"> Data Exploration and Wrangling:</span> 
+Fan of {tidyverse}, Efficient coding advocate.
+
+- <i class="fa fa-cube fa-lg"></i> 
+<span style="font-weight:bold"> Modeling and Machine Learning:</span>
+{Tidymodels} Framework
+
+- <i class="fa fa-code-branch fa-lg"></i> 
+<span style="font-weight:bold"> Workflow:</span>
+git, GitHub, Travis/Runner, agile
+
+<!-- ::: {.skill-bar style="background:linear-gradient(to right, -->
+<!--                                       #969696 100%, -->
+<!--                                       #d9d9d9 100% 100%)"} -->
+<!-- R2 -->
+<!-- ::: -->
+
+# Main
+
+## Ardalan Mirshani {#title}
+
+[I am a **Data Scientist** and **Statistical web app developer** with an <br> interest on creating scientific tools, reproducible workflows, and automating repetitive tasks that arise during all data wrangling, exploring, visualizing, modeling, and reporting processes.]{style="font-size:14px; text-align: justify;
+  text-justify: inter-word;"}
+
+## Professional Experience {data-icon="suitcase"}
+
+### Sr Expert Data Science
+
+Novartis
+
+Cambridge, MA
+
+Present - 10-2019
+
+- [Creating generalizable and reusable statistical tools, advance interactive visualizations, automation workflows, high performance computing, <br> scientific reproducible templates and reports for analytics activities.]{style='text-align: justify;
+  text-justify: inter-word;'}
+- Developing production-grade shiny apps, modules, and R-packages to support exploratory machine learning projects.
+- Designing educational training materials and consulting for internal quantitative scientists.
+
+### Shiny app developer (Internship)
+
+Novartis ([Recommendation](https://www.linkedin.com/in/mirshani/))
+
+Cambridge, MA
+
+08-2018 - 05-2018
+
+- Implementing modularized R Shiny apps for analyzing clinical trials.
+
+### Statistical Consultant
+
+PSU Statistical Consulting Center
+
+University Park, PA
+
+2016
+
+- Applications of statistical methods in the consulting environment.
+
+## Education {data-icon="graduation-cap" data-concise="true"}
+
+### PhD, Statistics
+
+Pennsylvania State University
+
+University Park, PA
+
+2019 - 2014
+
+- Thesis: [Regularization Methods in Functional Data Analysis](https://etda.libraries.psu.edu/catalog/16828azm245)
+
+### M.Sc, Mathematics
+
+Sharif University of Technology
+
+Iran
+
+2013 - 2011
+
+### B.Sc, Electrical Engineering
+
+KNTU
+
+Iran
+
+2011 - 2006
+
+## Freelance Experience {data-icon="laptop"}
+
+### [Brand Loyalty Lab](https://brandloyaltylab.com)
+
+A series of research and development on retail market brand loyalty.
+
+N/A
+
+Now - 2019
+
+### [RAAVI](https://ardeeshany.shinyapps.io/Raavi_en/)
+
+A complicated modularized Shiny app for analyzing students' scores.
+
+N/A
+
+2018 - 2017
+
+::: {.aside}
+[Other Languages:]{style="font-family: 'Montserrat', sans-serif; font-size:18px;"}
+
+- <i class="fab fa-python fa-lg"></i> 
+<span style="font-weight:bold"> Python:</span> 
+My second <br> language, {reticulate}
+
+- <i class="fa fa-code fa-lg"></i> 
+<span style="font-weight:bold"> Julia:</span> Exploration
+
+- <i class="fa fa-terminal fa-lg"></i> 
+<span style="font-weight:bold"> Script:</span> Bash
+:::
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+
+## Certificates {data-icon="certificate"}
+
+### Data Science
+
+DataCamp ([Certificates](https://www.linkedin.com/in/mirshani/))
+
+N/A
+
+2020 - 2018
+
+- Exploring +40 `Datacamp` courses on the state of the art pkgs in Data wrangling, visualizing, modeling, reporting, Big data, databases, and more for thinking and coding more efficient.
+
+::: {.aside}
+<br> <br> <br> <br> <br> <br> <br> <br>
+[Cheatsheet]{style="font-family: 'Montserrat', sans-serif; font-size:18px;"}
+
+- <i class="fa fa-align-justify fa-lg"></i> <span style="font-weight:bold"> [Parallel Computing](https://github.com/rstudio/cheatsheets/raw/master/parallel_computation.pdf):</span> <br> Contributed to RStudio Cheatsheet
+:::
+
+## Research Experience {data-icon="newspaper"}
+
+### [Adaptive function-on-scalar regression with a smoothing elastic net]{style='font-size:12.2px;'}
+
+Submitted to JMVA ([Article](https://arxiv.org/abs/1905.09881))
+
+N/A
+
+2020 - 2018
+
+- [{AFSSEN} R-Package](https://github.com/ardeeshany/AFSSEN): A very fast coordinate descent algorithm (`C++` backend) for running function-on-scalar regression in high-dim data.
+
+### Formal privacy for functional data with gaussian perturbations
+
+ICML 2019 ([Article](http://proceedings.mlr.press/v97/mirshani19a.html))
+
+N/A
+
+2019 
+
+- Developed a [Shiny app](https://ardeeshany.shinyapps.io/private_face/) for exploring privacy in 3D facial data.
+
+::: {.aside}
+[Everyday Learning:]{style="font-family: 'Montserrat', sans-serif; font-size:18px;"}
+
+- <i class="fab fa-twitter fa-lg"></i> 
+<span style="font-weight:bold"> R Community:</span> <br>
+Following `#TidyTuesday`, `#Rstats`, `#dataviz`, `#RLadies`,  Screencasts
+
+:::
+
+## Teaching Experience {data-icon="chalkboard-teacher"}
+
+### Lecturer: Probability, statistics and Calculus
+
+Tehran Virtual University
+
+Iran
+
+2008
+
+## Awards {data-icon="trophy"}
+
+### CD&A Best Poster Presentation Awards
+
+A Shiny app for exploring safety and efficacy of Heme data
+
+Novartis
+
+2020
+
+### Rao Prize Best Poster Presentation Awards
+
+Privacy in functional data analysis
+
+PSU
+
+2017
+
+### Silver Medal
+
+35th Iranian National Mathematics Competition for university
+
+Iran
+
+2011
+
+## Disclaimer {#disclaimer}
+
+Made with [pagedown](https://github.com/rstudio/pagedown) 
+
+Source code from [nstrayer](https://github.com/nstrayer/cv)
+
+Last updated on `r Sys.Date()`.
